@@ -1,4 +1,8 @@
-﻿using System;
+using NUnit.Framework;
+using System;
+using System.Data;
+using System.Linq;
+using System.Text;
 
 namespace Open_Lab_04._11
 {
@@ -6,7 +10,9 @@ namespace Open_Lab_04._11
     {
         public string AlphabetSoup(string str)
         {
-            throw new NotImplementedException();
+            
+            return String.Concat(str.OrderBy(ch => ch));
+            
         }
     }
 }
